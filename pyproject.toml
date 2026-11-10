@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "social-media-auto-post-tool"
+version = "0.1.0"
+description = "Local Windows tool for sequential social media publishing."
+readme = "README.md"
+requires-python = ">=3.11,<3.15"
+dependencies = ["streamlit>=1.50,<2", "playwright>=1.56,<2", "requests>=2.32,<3", "packaging>=24,<27", "keyring>=25,<26"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
